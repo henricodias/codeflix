@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+Filmes
+{% endblock %}
+
+{% block content %}
+
+<div class="py-10">
+    <h1>Essa é a pagina dos cursos</h1>
+    <hr>
+    {% for filme in object_list %}
+        <a href="{% url 'filme:detalhesfilme' filme.id %}"><p>{{ filme.titulo }}</p></a>
+        <p>{{ filme.descricao }}</p>
+        <img src="{{ filme.thumb.url }}">
+    {% endfor %}
+</div>
+
+{% endblock %}
