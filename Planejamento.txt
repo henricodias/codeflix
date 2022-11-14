@@ -7,7 +7,7 @@
     - editar perfil
 - Filmes e Séries
     - episódios
-        - vídeos
+        - vídeos (link do vídeo)
         - título
     - thumb
     - título
